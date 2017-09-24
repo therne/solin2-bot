@@ -30,10 +30,10 @@ app.post('/message', async ctx => {
     return {
         message: {
             text: `${content} 할일이 등록되었어요!`,
-        },
-        message_button: {
-            label: 'Solin에서 보기',
-            url: 'http://therne.me/'
+            message_button: {
+                label: 'Solin에서 보기',
+                url: 'http://therne.me/'
+            }
         }
     }
 });
