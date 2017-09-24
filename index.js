@@ -19,7 +19,7 @@ app.get('/keyboard', async ctx => {
 });
 
 app.post('/message', async ctx => {
-    const { user_key, type, content } = ctx.body;
+    const { user_key, type, content } = ctx.request.body;
     log(`User ${user_key} sent ${type} : ${content}`);
 
     if (type === 'text' && content.includes('안녕')) {
