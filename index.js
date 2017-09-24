@@ -3,10 +3,6 @@ const Mansion = require('mansion');
 
 const log = Mansion.Logger;
 const app = Mansion.classic();
-app.use(async (ctx, next) => {
-    await next();
-    ctx.type = 'application/json; charset=utf-8';
-});
 
 /**
  * GET /keyboard
